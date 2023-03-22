@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-16T21:06:20.773Z",
+    "end": "2023-03-16T21:09:20.469Z",
+    "duration": 174074,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bff4532d-b37e-444e-b4bc-cc25c8d144d9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Add_mattress_to_cart_and_checkout.ts",
+      "file": "cypress\\e2e\\Add_mattress_to_cart_and_checkout.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a9a62b50-669e-4f9e-a955-667be121d13e",
+          "title": "Add Mattress to cart and checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add mattress to cart and checkout",
+              "fullTitle": "Add Mattress to cart and checkout Add mattress to cart and checkout",
+              "timedOut": null,
+              "duration": 174074,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/Add_mattress_to_cart_and_checkout.ts.mp4\"",
+              "code": "cy.visit(Cypress.env(\"BASE_URL\"));\ncy.log(\"User navigated to url successfully\");\nheader.getMattresses();\ncy.log(\"User taps on Mattress tab in header\");\nproductCard.waitForReadiness();\ncard.getExploreButton();\ncy.log(\"User taps on explore button in product card\");\naddToCart.isNameMatch();\ncy.log(\"Verified that Name of product in card and on detail page is same\");\naddToCart.getAddToCart();\ncy.log(\"User taps on add to cart button on product detail page.\");\ncheckout.isPriceMatch();\ncy.log(\"Verified that Price of product on product detail page and product in cart is same\");\ncheckout.getCheckoutButton();\ncy.log(\"User taps on checkout button\");\nheader.getCart();\ncy.log(\"User taps on cart icon in header\");",
+              "err": {},
+              "uuid": "1802cebc-4dd3-487c-bae8-affb14b09de5",
+              "parentUUID": "a9a62b50-669e-4f9e-a955-667be121d13e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1802cebc-4dd3-487c-bae8-affb14b09de5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 174074,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
